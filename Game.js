@@ -65,6 +65,8 @@ class Game{
 
 
         // Create and spawn fruits randomly
+var fruit=createSprite(340,0)
+var ran = math.round(random(1,5))
 
         
     }
