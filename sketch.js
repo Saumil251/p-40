@@ -35,7 +35,16 @@ function setup() {
 
 function draw() {
   background(back_img);
-
-  // Add conditions for gameStates and playerCount
-
+  
+   if (playerCount === 2) {
+     game.update(1);
+   }
+   if (gameState === 1) {
+     clear(); 
+     game.play();
+   }
+   if (gameState === 2) {
+    
+     game.end();
+   }
 }
